@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <%include layout.ejs %>
+
+
+  <div class="grid-container">
+      <div>1</div>
+      <div>2</div>
+  </div>
+
+        <h3 style="text-align: center">Welcome to  Smart Trader, please sign up below</h3>
+      <div class="container">
+          <form action="">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email address..">
+
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" placeholder="Your username..">
+
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Your password..">
+
+              <input type="submit" value="Sign Up">
+          </form>
+      </div>
+
+  </body>
+</html>
+

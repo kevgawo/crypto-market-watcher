@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title><%= title %></title>
+   <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<%include layout.ejs %>
+
+<div style=" background-color: rgb(36, 174, 184); padding-top: 2em; padding-bottom: 2em; padding-left: 2em; padding-right: 2em">
+      <table>
+         <tr>
+            <th>Bitstamp</th>
+            <th>gdax</th>
+            <th>BitMex</th>
+            <th>Bittrex</th>
+            <th>Bitfinex</th>
+
+         </tr>
+         <tr>
+            <td id="Bitstamp"></td>
+            <td id="gdax"></td>
+            <td id="BitMex"></td>
+            <td id="Bittrex"></td>
+            <td id="Bitfinex"></td>
+
+         </tr>
+      </table>
+</div>
+
+
+
+<script src="socket.io/socket.io.js"></script>
+<script>
+   let socket = io.connect('http://localhost:3000');
+
+   socket.on('Rate', function (data) {
+      document.getElementById("Bitstamp").innerHTML = data.Bitstamp;
+      document.getElementById("gdax").innerHTML = data.gdax;
+      document.getElementById("BitMex").innerHTML = data.BitMex;
+      document.getElementById("Bittrex").innerHTML = data.Bittrex;
+      document.getElementById("Bitfinex").innerHTML = data.Bitfinex;
+      console.log(data);
+      socket.emit('my other event', data);
+   });
+</script>
+</body>
+</html>

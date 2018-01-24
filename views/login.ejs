@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title><%= title %></title>
+   <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<%include layout.ejs %>
+
+<div class="container">
+    <h2 style="text-align: center">Admin-Login</h2>
+    <form action="">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Your username..">
+
+        <label for="email">Password</label>
+        <input type="password" id="email" name="password" placeholder="Your password..">
+
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</body>
+</html>
+
