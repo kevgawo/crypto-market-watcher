@@ -5,6 +5,7 @@ import express from 'express';
 import logger from 'morgan';
 import path from 'path';
 // import favicon from 'serve-favicon';
+<<<<<<< HEAD
 const bitCoin = require('./crypto');
 
 import index from './routes/index';
@@ -43,6 +44,12 @@ io.on('connection', function (socket) {
 });
 
 
+=======
+
+import index from './routes/index';
+
+const app = express();
+>>>>>>> 7d358f44f4823504c539372b7675f01696d8e915
 const debug = Debug('crypto-martket-watcher:app');
 app.set('views', path.join(__dirname, 'views'));
 // view engine setup
@@ -60,7 +67,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+<<<<<<< HEAD
 app.use('/login', login);
+=======
+>>>>>>> 7d358f44f4823504c539372b7675f01696d8e915
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

@@ -4,7 +4,11 @@
   "private": true,
   "main": "app.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "nodemon ./bin/start",
+=======
+    "start": "node ./bin/start",
+>>>>>>> 7d358f44f4823504c539372b7675f01696d8e915
     "test": "mocha --recursive './test/*Test.js' --compilers js:babel-core/register"
   },
   "dependencies": {
@@ -14,15 +18,22 @@
     "babel-preset-stage-0": "^6.24.1",
     "body-parser": "^1.16.1",
     "cookie-parser": "^1.4.3",
+<<<<<<< HEAD
     "crypto-socket": "^3.0.0",
+=======
+>>>>>>> 7d358f44f4823504c539372b7675f01696d8e915
     "debug": "^3.0.0",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
     "morgan": "^1.8.2",
+<<<<<<< HEAD
     "nodemon": "^1.14.11",
     "serve-favicon": "^2.4.3",
     "socket.io": "^2.0.4",
     "yarn": "^1.3.2"
+=======
+    "serve-favicon": "^2.4.3"
+>>>>>>> 7d358f44f4823504c539372b7675f01696d8e915
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

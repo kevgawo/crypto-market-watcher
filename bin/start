@@ -48,9 +48,12 @@ app.set('port', port);
 
 const server = http.createServer(app);
 
+<<<<<<< HEAD
 const io = app.io;
 io.attach(server);
 
+=======
+>>>>>>> 7d358f44f4823504c539372b7675f01696d8e915
 /**
  * Listen on provided port, on all network interfaces.
  */
